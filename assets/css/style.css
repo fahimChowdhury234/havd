@@ -7404,16 +7404,16 @@ label {
 
 .tokenomics-text .text-2 {
   position: absolute;
-  top: 281px;
-  left: 543px;
+  top: 305px;
+  left: 615px;
   width: 10%;
   font-size: 24px;
 }
 
 .tokenomics-text .text-3 {
   position: absolute;
-  top: 112px;
-  right: 710px;
+  top: 118px;
+  right: 790px;
   width: 6%;
   font-size: 24px;
 
@@ -7421,8 +7421,8 @@ label {
 
 .tokenomics-text .text-4 {
   position: absolute;
-  top: 230px;
-  right: 434px;
+  top: 252px;
+  right: 483px;
   width: 15%;
   font-size: 24px;
 
@@ -7431,8 +7431,9 @@ label {
 
 .tokenomics-text .text-5 {
   position: absolute;
-  top: 380px;
-  right: -1025px;
+  top: 446px;
+  right: -1106px;
+
   width: 100%;
   font-size: 24px;
 
@@ -7441,8 +7442,9 @@ label {
 
 .tokenomics-text ul {
   position: absolute;
-  top: 532px;
-  left: 279px;
+  top: 584px;
+  left: 350px;
+
   width: 100%;
   font-size: 20px;
 }
@@ -7456,8 +7458,8 @@ label {
 
 .tokenomics-text .text-7 {
   position: absolute;
-  top: 550px;
-  right: -1035px;
+  top: 600px;
+  right: -1112px;
   width: 100%;
   font-size: 24px;
 }
