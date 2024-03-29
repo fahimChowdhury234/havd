@@ -52,7 +52,7 @@
   --tg-body-font-family: 'Outfit', sans-serif;
   --tg-heading-font-family: 'Plus Jakarta Sans', sans-serif;
   --tg-logo-font-family: 'Nasalization', sans-serif;
-  --tg-primary-color: #E275FF;
+  --tg-primary-color: #ff3900;
   --tg-secondary-color: #0F101E;
   --tg-body-font-color: #92939E;
   --tg-heading-font-color: #FFFFFF;
@@ -483,12 +483,12 @@ label {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .navbar-wrap {
-  display: flex;
-  flex-grow: 1;
+  /* display: flex;
+  flex-grow: 1; */
 }
 
 .navbar-wrap ul {
@@ -3454,7 +3454,7 @@ label {
 
 /* Home 2 ---------------------------------- */
 .home-purple-gradient {
-  --tg-primary-color: #DF86AA;
+  --tg-primary-color: #ff3900;
   --tg-theme-color2: #5729D6;
   --tg-black2: #10121D;
   --tg-secondary-color: #010314;
@@ -3692,7 +3692,7 @@ label {
 .bg-gradient-1:after {
   content: '';
   position: absolute;
-  background: linear-gradient(to top, rgba(46, 32, 255, 0.47), transparent 50%);
+  background: linear-gradient(to top bottom, #202529, #111518, transparent 50%);
   filter: blur(175px);
   inset: 0;
 }
@@ -3940,7 +3940,7 @@ label {
   position: relative;
   overflow: hidden;
   padding-bottom: 145px;
-  background-image: url(../img/heros/HOME_hero_mockup.png);
+  background-image: url(../img/heros/HOME_hero01_background.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -3957,6 +3957,49 @@ label {
   height: 2191px;
   transform: translate(-50%, 0);
   border-radius: 0 0 50% 50%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  text-align: center;
+}
+
+.hero-text h3 {
+  margin-bottom: 30px;
+}
+
+.hero-wrapper figure {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, 0px);
+  bottom: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-wrapper figure img {
+  width: 75%;
+}
+
+.social-icon li a img {
+  width: 50px;
+}
+
+.navbar-wrap {
+  justify-content: flex-end;
+
+  gap: 166px;
+  align-items: center;
+}
+
+.social-icon {
+  list-style: none;
 }
 
 @media (max-width: 1199px) {
@@ -4100,7 +4143,7 @@ label {
   color: var(--tg-white);
   font-weight: 700;
   letter-spacing: -2.8px;
-  font-size: 70px;
+  font-size: 50px;
   line-height: 1.2857;
 }
 
@@ -4139,7 +4182,7 @@ label {
 .hero-style1 {
   position: relative;
   z-index: 6;
-  padding: 220px 0 30px;
+  /* padding: 220px 0 30px; */
 }
 
 .hero-style1 .btn-wrap {
@@ -7276,12 +7319,14 @@ label {
 .call-to-action-content h3 {
   color: #ff3900;
   font-weight: 700;
+  font-family: 'Nasalization';
 }
 
 .call-to-action-content span {
   color: #ff3900 !important;
   font-size: 24px;
   font-weight: bold;
+  font-family: 'Nasalization';
 }
 
 /* memes-section */
@@ -7427,6 +7472,10 @@ label {
     font-size: 12px !important;
   }
 
+  .wcu-area-1 {
+    padding: 50px 0;
+  }
+
   .tokenomics-text .text-1 {
     top: 40px !important;
     left: 7px !important;
@@ -7487,5 +7536,17 @@ label {
     top: 317px;
     right: -20px;
     font-size: 12px;
+  }
+
+  .hero-wrapper figure {
+    width: 90%;
+  }
+
+  .hero-wrapper figure img {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 28px;
   }
 }
