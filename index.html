@@ -494,11 +494,13 @@
                     </div>
                     <div class="tokenomics-text">
                         <div class="text-2">
-                            <label for="#" class=""> Contract:</label>
-                            <p class="text"> 0x940fht90028930498dd73ax</p>
-                            <button>
+                            <label for="#" class="">Contract:</label>
+                            <p id="contractText" class="text">0x940fht90028930498dd73ax</p>
+                            <button id="copyButton" class="">
                                 <img src="./assets/img/UI/HAVD_copy.png" alt="">
                             </button>
+                            <span id="copyMessage" style="display: none;">Copyid</span>
+
                         </div>
                         <div class="text-1">
                             <p class="text"> 21,000,00 token hard cap</p>
@@ -507,7 +509,7 @@
                 </div>
                 <div class="tokenomics-imgs">
                     <div class="img-box">
-                        <img src="./assets/img/heros/meme-3.jpg" alt="">
+                        <img src="./assets/img/heros/IMG_3818.PNG" alt="">
                     </div>
                     <div class="img-box">
                         <img src="./assets/img/heros/IMG_3818.PNG" alt="">
@@ -776,6 +778,28 @@
             <script src="assets/js/jquery.magnific-popup.min.js"></script>
             <script src="assets/js/wow.min.js"></script>
             <script src="assets/js/main.js"></script>
+            <script>
+                document.getElementById('copyButton').addEventListener('click', function () {
+                    var contractText = document.getElementById('contractText').textContent;
+                    var tempInput = document.createElement('input');
+                    tempInput.value = contractText;
+                    document.body.appendChild(tempInput);
+                    tempInput.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(tempInput);
+
+                    // Show the copy message
+                    var copyMessage = document.getElementById('copyMessage');
+                    copyMessage.style.display = 'inline';
+
+                    // Hide the copy message after 1 second
+                    setTimeout(function () {
+                        copyMessage.style.display = 'none';
+                    }, 1000);
+                });
+            </script>
+
+
 </body>
 
 </html>
