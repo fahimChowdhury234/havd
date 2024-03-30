@@ -7382,63 +7382,47 @@ label {
 }
 
 .tokenomics-text {
-  position: absolute;
-  top: 0;
+
   color: #f1ed8a;
   width: 100%;
+  font-family: 'Nasalization';
+  font-weight: 400;
 
 }
 
 .tokenomics-text .text {
   color: #f1ed8a;
-  line-height: 24px;
-
-
+  font-size: 24px;
 }
 
 .tokenomics-text .text-1 {
   position: absolute;
-  top: 80px;
-  left: 200px;
+  bottom: 302px;
+  right: 248px;
 }
 
 .tokenomics-text .text-2 {
   position: absolute;
-  top: 305px;
-  left: 615px;
-  width: 10%;
-  font-size: 24px;
-}
-
-.tokenomics-text .text-3 {
-  position: absolute;
-  top: 118px;
-  right: 790px;
-  width: 6%;
-  font-size: 24px;
-
-}
-
-.tokenomics-text .text-4 {
-  position: absolute;
-  top: 252px;
-  right: 483px;
-  width: 15%;
-  font-size: 24px;
-
-}
-
-
-.tokenomics-text .text-5 {
-  position: absolute;
-  top: 446px;
-  right: -1106px;
-
+  bottom: 305px;
+  left: 245px;
   width: 100%;
-  font-size: 24px;
-
-
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.tokenomics-text .text-2 button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 50px;
+}
+
+.tokenomics-text .text-2 p {
+  margin: 0;
+}
+
 
 .tokenomics-text ul {
   position: absolute;
@@ -7450,10 +7434,12 @@ label {
 }
 
 .tokenomics-text label {
-  font-size: 18px;
+  font-size: 24px;
   color: #f1ed8a;
   line-height: 20px;
   display: block;
+  font-family: 'Nasalization';
+
 }
 
 .tokenomics-text .text-7 {
@@ -7468,59 +7454,125 @@ label {
   font-size: 14px;
 }
 
+.tokenomics-imgs {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.tokenomics-imgs .img-box {
+  width: 10%;
+}
+
+/* .tokenomics-contnet {
+  background-image: url(../img/heros/IMG_3819.PNG);
+  background-position: center;
+  height: 100vh;
+} */
+
+.section-title-img {
+  margin: 40px 0;
+
+}
+
+.section-title-img img {
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+}
+
+.timeer-wrapper-lg .banner-countdown-wrap {
+  margin-top: 20px;
+}
+
+.timeer-wrapper-lg h2 {
+  font-size: 30px !important;
+}
+
+.timeer-wrapper-lg .coming-time {
+  gap: 20px;
+}
+
+.timeer-wrapper-lg {
+  padding: 35px;
+  width: 31%;
+  margin: 0 0 auto auto;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 16px;
+}
+
+.faq-hero-title {
+  font-size: 80px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) and (min-width: 200px) {
+  .timeer-wrapper-lg {
+    display: none;
+  }
+
+  .hero-countdown-wrap .banner-countdown-wrap {
+    margin-top: 40px;
+  }
+
+  .hero-countdown-wrap .hero-countdown-wrap-title {
+    font-size: 22px;
+  }
+
   .text {
     line-height: 18px !important;
     font-size: 12px !important;
+  }
+
+  .hero-style1 {
+    padding: 0;
   }
 
   .wcu-area-1 {
     padding: 50px 0;
   }
 
+  .tokenomics-imgs {
+    gap: 40px;
+    bottom: -29px;
+  }
+
+  .tokenomics-imgs .img-box {
+    width: 14%;
+  }
+
+
   .tokenomics-text .text-1 {
-    top: 40px !important;
-    left: 7px !important;
+    bottom: 35px;
+    left: -92px;
+    width: 100%;
+
+  }
+
+  .tokenomics-text .text-2 button {
+    width: 40px;
+  }
+
+  .section-title-img img {
+    width: 75%;
   }
 
   .tokenomics-text .text-2 {
-    top: 120px !important;
-    left: 54px !important;
-    width: 16% !important;
+    bottom: 60px;
+    left: 10px !important;
     font-size: 12px !important;
 
   }
 
-  .tokenomics-text .text-3 {
-    position: absolute;
-    top: 50px !important;
-    right: 80px !important;
-    width: 25% !important;
-    font-size: 12px;
-  }
 
-  .tokenomics-text .text-4 {
-    top: 84px;
-    right: 21px;
-    width: 22%;
-
-
-  }
-
-  .tokenomics-text span {
-    font-size: 12px;
-  }
-
-  .tokenomics-text .text-5 {
-    top: 178px;
-    right: 9px;
-
-    width: 29%;
-
-  }
 
   .tokenomics-img img {
-    height: 400px;
+    height: 250px;
     object-fit: cover;
   }
 
@@ -7550,5 +7602,9 @@ label {
 
   .hero-title {
     font-size: 28px;
+  }
+
+  #FAQ {
+    padding: 50px 0 !important;
   }
 }
