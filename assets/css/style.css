@@ -7515,7 +7515,7 @@ label {
   right: 20px;
   bottom: 20px;
   border-radius: 16px;
-  z-index: 9999;
+  z-index: 11;
 }
 
 .faq-hero-title {
@@ -7527,6 +7527,15 @@ label {
 #copyButton {
   cursor: pointer;
 }
+
+.min::before {
+  display: none;
+}
+
+.min::after {
+  display: none;
+}
+
 
 @media only screen and (max-width: 600px) and (min-width: 200px) {
   .timeer-wrapper-lg {
