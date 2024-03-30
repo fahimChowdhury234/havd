@@ -7467,6 +7467,12 @@ label {
   width: 10%;
 }
 
+.tokenomics-imgs .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* .tokenomics-contnet {
   background-image: url(../img/heros/IMG_3819.PNG);
   background-position: center;
@@ -7514,6 +7520,15 @@ label {
 @media only screen and (max-width: 600px) and (min-width: 200px) {
   .timeer-wrapper-lg {
     display: none;
+  }
+
+  .social-icon {
+    display: flex;
+    gap: 18px;
+  }
+
+  .social-icon li a img {
+    width: 46px;
   }
 
   .hero-countdown-wrap .banner-countdown-wrap {
