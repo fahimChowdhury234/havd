@@ -7583,11 +7583,17 @@ label {
 
   .tokenomics-text .text-2 {
     gap: 0;
+    bottom: 68%;
+    top: inherit;
   }
 
   .tokenomics-imgs {
     gap: 40px;
     bottom: -29px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
   }
 
   .tokenomics-imgs img {
@@ -7595,7 +7601,7 @@ label {
   }
 
   .tokenomics-imgs .img-box {
-    width: 14%;
+    width: 50%;
   }
 
 
