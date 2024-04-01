@@ -4275,7 +4275,7 @@ label {
   }
 
   .hero-countdown-wrap .banner-countdown-wrap .coming-time {
-    gap: 30px 60px;
+    gap: 10px;
   }
 }
 
@@ -7668,5 +7668,19 @@ label {
 
   #FAQ {
     padding: 50px 0 !important;
+  }
+
+  .time-count {
+
+    min-width: 80px !important;
+
+    font-size: 14px !important;
+    padding: 10px 8px !important;
+
+  }
+
+  .time-count span {
+    font-size: 20px !important;
+
   }
 }
